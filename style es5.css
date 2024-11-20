@@ -69,20 +69,6 @@ header{
 .imgarticoli{
     height: 300px;
     width: 350px;
-    animation: pulsazione 2s infinite
-}
-
-
-@keyframes pulsazione {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1); 
-    }
-    100% {
-        transform: scale(1); 
-    }
 }
 
 
@@ -140,11 +126,27 @@ aside {
     height: 30px;
     width: 30px;
     border: 3px solid black;
-    position: absolute;
-    right: 0px;
-    margin: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 20px;
     z-index: 50px;
-    
+    animation-name: pulsazione;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes pulsazione {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
 }
 
 
